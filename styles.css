@@ -47,7 +47,7 @@ body {
 .progress-ring__circle {
     fill: none;
     /*filter: drop-shadow(0px 0px 12px rgba(70, 149, 198, 0.8));*/
-    *filter: url(#glow);
+    filter: url(#glow);
     stroke-width: 15;
     stroke-linecap: round;
     transition: stroke-dasharray 3s ease-in-out;
