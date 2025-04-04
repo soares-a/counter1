@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Animado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
+      
+    <div class="counter-container">
+        <div class="counter">
+            <span class="counter-value">0</span>
+            <svg class="progress-ring" width="200" height="200" viewBox="0 0 200 200">
+                <defs>
+                    <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#4695C6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6BA552;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="8.5" result="blurred" />
+                        <feMerge>
+                            <feMergeNode in="blurred" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <circle class="progress-ring__circle" cx="100" cy="100" r="90" stroke="url(#progressGradient)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
