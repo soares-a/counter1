@@ -4,8 +4,6 @@ Criado com 💙 por Anderson
 
 ---
 
-## 🇺🇸 `README_en.md` 
-
 # 🎯 Animated Counter with Progress Ring
 
 This project displays:
